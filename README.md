@@ -1,2 +1,2 @@
 # sagefremont
-GitHub Pages
+Hosting for sagefremont.com
