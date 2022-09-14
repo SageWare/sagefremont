@@ -1,0 +1,782 @@
+<section class="extTable section-table" group="Additional Blocks" data-bg-video="{{bg.type == 'video'&&bg.value.url}}"
+    mbr-class="{'mbr-parallax-background':bg.parallax}" plugins="dataTables">
+
+    <head>
+        <script src="https://kit.fontawesome.com/999afadd68.js" crossorigin="anonymous"></script>
+    </head>
+
+    <!-- plugins="dataTables"  -->
+
+    <mbr-parameters>
+        <!-- Block parameters controls (Blue "Gear" panel) -->
+        <input type="range" inline title="Top" name="paddingTop" min="0" max="9" step="1" value="9">
+        <input type="range" inline title="Bottom" name="paddingBottom" min="0" max="9" step="1" value="7">
+        <input type="checkbox" title="Show Sort" name="showSort" checked>
+        <input type="checkbox" title="Show Title" name="showTitle" checked>
+        <input type="checkbox" title="Show Subtitle" name="showSubtitle" checked>
+        <input type="checkbox" title="Show Text" name="showText">
+        <input type="range" inline title="Table Width" name="tableWidth" min="50" max="100" step="1" value="100">
+        <input type="range" inline title="Columns" name="tableColumns" min="1" max="50" step="1" value="5">
+        <input type="range" inline title="Rows" name="tableRows" min="1" max="50" step="1" value="26">
+        <input type="color" title="Row Hover Color" name="tbHover" value="#100e00">
+        <input type="color" title="Row Bottom Border" name="borderColor" value="#c1c1c1">
+        <input type="checkbox" title="Table Background" name="tbBackground">
+        <input type="color" title="Table Background Color" name="tbBgColor" value="#ffffff" condition="tbBackground">
+
+        <fieldset type="background" name="bg" parallax>
+            <input type="image" title="Background Image"
+                value="file:///C:/Users/sagef/OneDrive/Desktop/Mobirise/Sage%20Fremont/assets/images/background6.jpg">
+            <input type="color" title="Background Color" value="#232323" selected>
+            <input type="video" title="Background Video" value="https://www.youtube.com/watch?v=36YgDDJ7XSc">
+        </fieldset>
+        <input type="checkbox" title="Overlay" name="overlay" checked condition="bg.type !== 'color'">
+        <input type="color" title="Overlay Color" name="overlayColor" value="#e4fff5"
+            condition="overlay&&bg.type !== 'color'">
+        <input type="range" inline title="Opacity" name="overlayOpacity" min="0" max="1" step="0.1" value="0.8"
+            condition="overlay&&bg.type !== 'color'">
+        <!-- End block parameters -->
+    </mbr-parameters>
+
+    <div class="mbr-overlay" mbr-if="overlay&&bg.type!== 'color'"
+        mbr-style="{'opacity': overlayOpacity, 'background-color': overlayColor}">
+    </div>
+    <div class="container">
+        <div class="media-container-row align-center">
+            <div class="col-12 col-md-12">
+                <h2 class="mbr-section-title mbr-fonts-style mbr-black pb-3" mbr-theme-style="display-2"
+                    mbr-if="showTitle" data-app-selector=".mbr-section-title, .head-item"><b>ARCHIVES</b></h2>
+                <h3 class="mbr-section-subtitle  mbr-fonts-style pb-3" mbr-theme-style="display-7" mbr-if="showSubtitle"
+                    data-app-selector=".mbr-section-subtitle, .body-item">
+                    An archived list of my work.</h3>
+                <div class="table-wrapper">
+                    <div class="container scroll">
+                        <table class="table  mx-auto" cellspacing="0">
+                            <thead>
+                                <tr class="table-heads" mbr-list mbr-list-grow="tableColumns">
+                                    <th mbr-text class="head-item mbr-fonts-style" mbr-theme-style="display-5"
+                                        data-app-selector=".head-item">YEAR</th>
+
+
+
+
+
+                                    <th mbr-text class="head-item mbr-fonts-style" mbr-theme-style="display-5"
+                                        data-app-selector=".head-item">TITLE</th>
+                                    <th mbr-text class="head-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-5" data-app-selector=".head-item">AFFILIATION</th>
+                                    <th mbr-text class="head-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-5" data-app-selector=".head-item">BUILT WITH</th>
+                                    <th mbr-text class="head-item mbr-fonts-style" mbr-theme-style="display-5"
+                                        data-app-selector=".head-item">LINK</th>
+                                </tr>
+                            </thead>
+
+                            <tbody mbr-list mbr-list-grow="tableRows">
+
+
+
+
+                                
+
+
+                                <!--- SUBMARINE ADVENTURE ---->
+                                <tr mbr-list mbr-list-grow="tableColumns">
+                                    <!--- YEAR ---->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">2021</td>
+                                    <!--- TITLE ---->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">Submarine Adventure</td>
+                                    <!--- AFFILIATION ---->
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">BFLAT Interactive
+                                    </td>
+                                    <!--- BUILT WITH ---->
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">C#, Unity</td>
+                                    <!--- LINK ---->
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item"><a
+                                            href="https://bflatinteractive.itch.io/submarine-adventure" target="_blank">
+                                            <div class="fa fa-external-link"></div>
+                                        </a></td>
+                                </tr>
+                                <!--- END ---->
+
+
+
+
+
+
+                                <!--- siphonrecords.com ---->
+                                <tr mbr-list mbr-list-grow="tableColumns">
+                                    <!--- YEAR ---->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">2021</td>
+                                    <!--- TITLE ---->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">siphonrecords.com</td>
+                                    <!--- AFFILIATION ---->
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">Siphon Records</td>
+                                    <!--- BUILT WITH ---->
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">HTML, CSS, JavaScript
+                                    </td>
+                                    <!--- LINK ---->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item"><a href="https://siphonrecords.com"
+                                            target="_blank">
+                                            <div class="fa fa-external-link"></div>
+                                        </a></td>
+                                </tr>
+                                <!--- END ---->
+
+
+
+
+
+
+                                <!--- Neptune: Mission One ---->
+                                <tr mbr-list mbr-list-grow="tableColumns">
+                                    <!--- YEAR ---->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">2021</td>
+                                    <!--- TITLE ---->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">Neptune: Mission One</td>
+                                    <!--- AFFILIATION ---->
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">BFLAT Interactive
+                                    </td>
+                                    <!--- BUILT WITH ---->
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">C++, Unreal Engine
+                                    </td>
+                                    <!--- LINK ---->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item"><a
+                                            href="https://bflatinteractive.itch.io/neptune-mission-one" target="_blank">
+                                            <div class="fa fa-external-link"></div>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <!--- END ---->
+
+
+
+                                <!--- VITAL 2020 ---->
+                                <tr mbr-list mbr-list-grow="tableColumns">
+                                    <!--- YEAR ---->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">2020</td>
+                                    <!--- TITLE ---->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">VITAL 2020</td>
+                                    <!--- AFFILIATION ---->
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">BFLAT Interactive
+                                    </td>
+                                    <!--- BUILT WITH ---->
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">C#, Unity</td>
+                                    <!--- LINK ---->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item"><a
+                                            href="https://www.bflatinteractive.com/vital-2020" target="_blank">
+                                            <div class="fa fa-external-link"></div>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <!--- END ---->
+
+
+
+
+
+
+
+
+
+                                <!--- bflatinteractive.com ---->
+                                <tr mbr-list mbr-list-grow="tableColumns">
+                                    <!--- YEAR ---->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">2020</td>
+                                    <!--- TITLE ---->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">bflatinteractive.com</td>
+                                    <!--- AFFILIATION ---->
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">BFLAT Interactive
+                                    </td>
+                                    <!--- BUILT WITH ---->
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">HTML, CSS, JavaScript
+                                    </td>
+                                    <!--- LINKS ---->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">
+                                        <!--- LINK 1 ---->
+                                        <a href="https://www.bflatinteractive.com" target="_blank">
+                                            <div class="fa fa-external-link"></div>
+                                        </a>&nbsp;
+                                        <!--- LINK 2 ---->
+                                        <a href="https://github.com/SageWare/bflatinteractive" target="_blank">
+                                            <div class="fa fa-github-square"></div>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <!--- END ---->
+
+
+
+                                <!--- sagedelio.com --->
+                                <tr mbr-list mbr-list-grow="tableColumns">
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">2020</td>
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">sagedelio.com</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">Delio Gallery</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">HTML, CSS, JavaScript
+                                    </td>
+                                    <!--- LINKS --->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">
+                                        <!--- LINK 1 --->
+                                        <a href="https://www.sagedelio.com/" target="_blank">
+                                            <div class="fa fa-external-link"></div>
+                                        </a>&nbsp;
+                                        <!--- LINK 2 --->
+                                        <a href="https://github.com/SageWare/sagedelio" target="_blank">
+                                            <div class="fa fa-github-square"></div>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <!--- END --->
+
+
+
+
+
+                                <!--- sagefremont.com --->
+                                <tr mbr-list mbr-list-grow="tableColumns">
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">2020</td>
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">sagefremont.com</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">—</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">HTML, CSS, JavaScript
+                                    </td>
+                                    <!--- LINKS --->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">
+                                        <!--- LINK 1 --->
+                                        <a href="https://www.sagefremont.com/" target="_blank">
+                                            <div class="fa fa-external-link"></div>
+                                        </a>&nbsp;
+                                        <!--- LINK 2 --->
+                                        <a href="https://github.com/SageWare/sagefremont" target="_blank">
+                                            <div class="fa fa-github-square"></div>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <!--- END --->
+
+
+
+<!--- UNLIMITED REPLAY --->
+<tr mbr-list mbr-list-grow="tableColumns">
+    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+        data-app-selector=".body-item">2019</td>
+    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+        data-app-selector=".body-item">Unlimited Replay</td>
+    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+        mbr-theme-style="display-7" data-app-selector=".body-item">—
+    </td>
+    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+        mbr-theme-style="display-7" data-app-selector=".body-item">Google Sites</td>
+    <!--- LINK --->
+    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+        data-app-selector=".body-item"><a
+            href="https://sites.google.com/view/unlimitedreplay/home" target="_blank">
+            <div class="fa fa-external-link"></div>
+        </a></td>
+</tr>
+<!--- END --->
+
+
+                                <!--- Return To Nothing --->
+                                <tr mbr-list mbr-list-grow="tableColumns">
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">2019</td>
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">Return to Nothing</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">BFLAT Interactive
+                                    </td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">C#, Unity</td>
+                                    <!--- LINK --->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item"><a
+                                            href="https://www.bflatinteractive.com/return-to-nothing" target="_blank">
+                                            <div class="fa fa-external-link"></div>
+                                        </a></td>
+                                </tr>
+                                <!--- END --->
+
+
+
+
+
+                                <!--- SKILLS --->
+                                <tr mbr-list mbr-list-grow="tableColumns">
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">2019</td>
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">Skills</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">BFLAT Interactive
+                                    </td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">C#, Unity</td>
+                                    <!--- LINK --->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item"><a href="https://www.bflatinteractive.com/skills"
+                                            target="_blank">
+                                            <div class="fa fa-external-link"></div>
+                                        </a></td>
+                                </tr>
+                                <!--- END --->
+
+
+
+
+                                <!--- BLACK HOLE FEEDS --->
+                                <tr mbr-list mbr-list-grow="tableColumns">
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">2019</td>
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">Black Hole Feeds</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">BFLAT Interactive
+                                    </td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">GDScript, Godot</td>
+                                    <!--- LINK --->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item"><a
+                                            href="https://www.bflatinteractive.com/black-hole-feeds" target="_blank">
+                                            <div class="fa fa-external-link"></div>
+                                        </a></td>
+                                </tr>
+                                <!--- END --->
+
+
+
+
+
+
+
+
+
+
+
+                                <!--- DataSize --->
+                                <tr mbr-list mbr-list-grow="tableColumns">
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">2019</td>
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">DataSize</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">—</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">C++</td>
+                                    <!--- LINK --->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item"><a
+                                            href="https://github.com/SageWare/CPlusPlus/tree/master/datasize"
+                                            target="_blank">
+                                            <div class="fa fa-github-square"></div>
+                                        </a></td>
+                                </tr>
+                                <!--- END --->
+
+
+
+
+                                <!--- Payslips --->
+                                <tr mbr-list mbr-list-grow="tableColumns">
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">2019</td>
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">Payslips</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">—</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">C++</td>
+                                    <!--- LINK --->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item"><a
+                                            href="https://github.com/SageWare/CPlusPlus/tree/master/payslips"
+                                            target="_blank">
+                                            <div class="fa fa-github-square"></div>
+                                        </a></td>
+                                </tr>
+                                <!--- END --->
+
+
+
+                                <!--- Library System --->
+                                <tr mbr-list mbr-list-grow="tableColumns">
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">2018</td>
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">Library System</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">—</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">SQL</td>
+                                    <!--- LINK --->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item"><a
+                                            href="https://github.com/SageWare/SQL/tree/master/Library%20System%20Database"
+                                            target="_blank">
+                                            <div class="fa fa-github-square"></div>
+                                        </a></td>
+                                </tr>
+                                <!--- END --->
+
+
+
+
+
+
+
+                                <!--- MEME CREATOR --->
+                                <tr mbr-list mbr-list-grow="tableColumns">
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">2018</td>
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">Meme Creator</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">—</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">Java</td>
+                                    <!--- LINKS --->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">
+                                        <!--- LINK 1 --->
+                                        <a href="https://github.com/SageWare/Java/blob/master/MemeCreator/MemeCreator.jar?raw=true"
+                                            target="_blank">
+                                            <div class="fa fa-download"></div>
+                                        </a>&nbsp;
+                                        <!--- LINK 2 --->
+                                        <a href="https://github.com/SageWare/Java/tree/master/MemeCreator"
+                                            target="_blank">
+                                            <div class="fa fa-github-square"></div>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <!--- END --->
+
+
+
+
+                                <!--- Bioshooter Demo --->
+                                <tr mbr-list mbr-list-grow="tableColumns">
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">2018</td>
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">Bioshooter Demo</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">—</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">GML, GameMaker Studio
+                                    </td>
+                                    <!--- LINK --->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item"><a
+                                            href="https://bflatinteractive.itch.io/bioshooter" target="_blank">
+                                            <div class="fa fa-external-link"></div>
+                                        </a></td>
+                                </tr>
+
+
+
+
+
+
+                                <!--- DRUM MACHINE UI --->
+                                <tr mbr-list mbr-list-grow="tableColumns">
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">2017</td>
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">Drum Machine UI</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">—</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">JavaScript, Web Audio
+                                        API, Nexus UI</td>
+                                    <!--- LINKS --->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">
+                                        <!--- LINK 1 --->
+                                        <a href="https://cdn.rawgit.com/SageWare/JavaScript/8d7165c9/drum_machine_ui/index.html"
+                                            target="_blank">
+                                            <div class="fa fa-external-link"></div>
+                                        </a>&nbsp;
+                                        <!--- LINK 2 --->
+                                        <a href="https://github.com/SageWare/JavaScript/blob/master/drum_machine_ui/drum_machine_ui.js"
+                                            target="_blank">
+                                            <div class="fa fa-github-square"></div>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <!--- END --->
+
+
+
+
+
+
+
+
+
+                                <!--- Algo Melody --->
+                                <tr mbr-list mbr-list-grow="tableColumns">
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">2017</td>
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">Algo Melody</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">—</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">JavaScript, Web Audio
+                                        API</td>
+                                    <!--- LINKS --->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">
+                                        <!--- LINK 1 --->
+                                        <a href="https://rawgit.com/SageWare/JavaScript/master/algo_melody/index.html"
+                                            target="_blank">
+                                            <div class="fa fa-external-link"></div>
+                                        </a>&nbsp;
+                                        <!--- LINK 2 --->
+                                        <a href="https://github.com/SageWare/JavaScript/blob/master/algo_melody/algo_melody.js"
+                                            target="_blank">
+                                            <div class="fa fa-github-square"></div>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <!--- END --->
+
+
+
+
+
+                                <!--- Python Calculator --->
+                                <tr mbr-list mbr-list-grow="tableColumns">
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">2017</td>
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">Python Calculator</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">—</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">Python</td>
+                                    <!--- LINK --->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item"><a
+                                            href="https://github.com/SageWare/Python/blob/master/calculator/calculator.py"
+                                            target="_blank">
+                                            <div class="fa fa-github-square"></div>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <!--- END --->
+
+
+
+
+                                <!--- XY Theremin --->
+                                <tr mbr-list mbr-list-grow="tableColumns">
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">2017</td>
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">XY Theremin</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">SOM Records</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">JavaScript, Web Audio
+                                        API</td>
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item"><a
+                                            href="https://github.com/SageWare/JavaScript/blob/master/xyther/xyther.js"
+                                            target="_blank">
+                                            <div class="fa fa-github-square"></div>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <!--- END --->
+
+
+
+                                <!--- Piano Freq --->
+                                <tr mbr-list mbr-list-grow="tableColumns">
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">2017</td>
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">Piano Freq</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">SOM Records</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">JavaScript, Web Audio
+                                        API</td>
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item"><a
+                                            href="https://github.com/SageWare/JavaScript/blob/master/piano_freq/piano_freq.js"
+                                            target="_blank">
+                                            <div class="fa fa-github-square"></div>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <!--- END --->
+
+
+
+                                <!--- “Apple” Film --->
+                                <tr mbr-list mbr-list-grow="tableColumns">
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">2015</td>
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">“Apple” Film</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">SOM Records</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">Audio, Score</td>
+                                    <!--- LINK --->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item"><a
+                                            href="https://www.youtube.com/watch?v=6JyBfZFW858" target="_blank">
+                                            <div class="fa fa-external-link"></div>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <!--- END --->
+
+
+
+
+
+                                <!--- soundsmerry.com V1 --->
+                                <tr mbr-list mbr-list-grow="tableColumns">
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">2014</td>
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">soundsmerry.com V1</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">SOM Records</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">HTML, CSS, Liquid
+                                        Code</td>
+                                    <!--- LINK --->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item"><a
+                                            href="https://web.archive.org/web/20181208033957/https://soundsmerry.com/"
+                                            target="_blank">
+                                            <div class="fa fa-external-link"></div>
+                                        </a></td>
+                                </tr>
+                                <!--- END --->
+
+
+
+
+                                <!--- jewelrybykaren.com --->
+                                <tr mbr-list mbr-list-grow="tableColumns">
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">2014</td>
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">jewelrybykaren.com</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">—</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">HTML, CSS, JavaScript
+                                    </td>
+                                    <!--- LINK --->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item"><a href="https://archive.is/FhxJG"
+                                            target="_blank">
+                                            <div class="fa fa-external-link"></div>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <!--- END --->
+
+
+
+
+
+
+                                <!--- merryonette.com --->
+                                <tr mbr-list mbr-list-grow="tableColumns">
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">2011</td>
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">merryonette.com</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">SOM Records</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">HTML, CSS, JavaScript
+                                    </td>
+                                    <!--- LINK --->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item"><a href="https://www.merryonette.com/"
+                                            target="_blank">
+                                            <div class="fa fa-external-link"></div>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <!--- END --->
+
+
+                                <!--- generalairproducts.com --->
+                                <tr mbr-list mbr-list-grow="tableColumns">
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">2007</td>
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item">generalairproducts.com</td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">General Air Products
+                                    </td>
+                                    <td mbr-text class="body-item mbr-fonts-style hideonmobile1"
+                                        mbr-theme-style="display-7" data-app-selector=".body-item">HTML, CSS, JavaScript
+                                    </td>
+                                    <!--- LINK --->
+                                    <td mbr-text class="body-item mbr-fonts-style" mbr-theme-style="display-7"
+                                        data-app-selector=".body-item"><a
+                                            href="https://web.archive.org/web/20070103214050/https://www.generalairproducts.com/"
+                                            target="_blank">
+                                            <div class="fa fa-external-link"></div>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <!--- END --->
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!---<p class="pt-4 mbr-fonts-style mbr-text align-center" mbr-if="showText" mbr-theme-style="display-7"
+                    data-app-selector=".mbr-text"></p>--->
+            </div>
+        </div>
+    </div>
+</section>
