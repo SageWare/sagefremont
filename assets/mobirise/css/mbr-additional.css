@@ -1422,101 +1422,101 @@ section.lazy-placeholder:after {
 .cid-s7TaQdTPo1 H2 {
   color: #ffffff;
 }
-.cid-s7SGB8Dn3W {
+.cid-thr5WSG8Fl {
   padding-top: 30px;
   padding-bottom: 0px;
   background-color: #232323;
 }
-.cid-s7SGB8Dn3W .mbr-section-subtitle {
+.cid-thr5WSG8Fl .mbr-section-subtitle {
   color: #ffffff;
   text-align: center;
   line-height: 1.6;
 }
-.cid-s7SGB8Dn3W .image-element {
+.cid-thr5WSG8Fl .image-element {
   position: relative;
   z-index: 0;
   overflow: hidden;
 }
-.cid-s7SGB8Dn3W .image-element img {
+.cid-thr5WSG8Fl .image-element img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center center;
 }
-.cid-s7SGB8Dn3W .wrapper {
+.cid-thr5WSG8Fl .wrapper {
   padding: 2rem 1rem 1rem 1rem;
 }
-.cid-s7SGB8Dn3W .card-overlay {
+.cid-thr5WSG8Fl .card-overlay {
   display: none;
   background: #100e00;
 }
 @media (min-width: 768px) {
-  .cid-s7SGB8Dn3W .image-element:hover .card-overlay {
+  .cid-thr5WSG8Fl .image-element:hover .card-overlay {
     opacity: 1;
     border-bottom-right-radius: 7rem;
   }
-  .cid-s7SGB8Dn3W .image-element:hover .wrapper {
+  .cid-thr5WSG8Fl .image-element:hover .wrapper {
     padding-top: 0;
     border-bottom-right-radius: 7rem;
   }
-  .cid-s7SGB8Dn3W .image-element:hover .wrapper .collapsed-content {
+  .cid-thr5WSG8Fl .image-element:hover .wrapper .collapsed-content {
     transition: opacity 0.5s, max-height 3s;
     opacity: 1;
     max-height: 999px;
     border-bottom-right-radius: 7rem;
   }
-  .cid-s7SGB8Dn3W .image-element:hover .wrapper .collapsed-content .mbr-section-btn {
+  .cid-thr5WSG8Fl .image-element:hover .wrapper .collapsed-content .mbr-section-btn {
     border-bottom-right-radius: 7rem;
   }
-  .cid-s7SGB8Dn3W .image-element.popup-btn:hover .card-overlay {
+  .cid-thr5WSG8Fl .image-element.popup-btn:hover .card-overlay {
     border-bottom-right-radius: 0 !important;
   }
-  .cid-s7SGB8Dn3W .image-element.popup-btn:hover .wrapper {
+  .cid-thr5WSG8Fl .image-element.popup-btn:hover .wrapper {
     border-bottom-right-radius: 0 !important;
   }
-  .cid-s7SGB8Dn3W .image-element.popup-btn:hover .wrapper .collapsed-content {
+  .cid-thr5WSG8Fl .image-element.popup-btn:hover .wrapper .collapsed-content {
     border-bottom-right-radius: 0 !important;
   }
-  .cid-s7SGB8Dn3W .image-element.popup-btn:hover .wrapper .collapsed-content .mbr-section-btn {
+  .cid-thr5WSG8Fl .image-element.popup-btn:hover .wrapper .collapsed-content .mbr-section-btn {
     border-bottom-right-radius: 0 !important;
   }
-  .cid-s7SGB8Dn3W .wrapper {
+  .cid-thr5WSG8Fl .wrapper {
     position: absolute;
     bottom: 0;
     width: 100%;
     padding: 1rem;
     background: transparent;
   }
-  .cid-s7SGB8Dn3W .wrapper .collapsed-content {
+  .cid-thr5WSG8Fl .wrapper .collapsed-content {
     transition: opacity 0.5s, max-height 1s;
     opacity: 0;
     max-height: 0px;
     overflow: hidden;
   }
-  .cid-s7SGB8Dn3W .card-overlay {
+  .cid-thr5WSG8Fl .card-overlay {
     transition: all .5s;
     opacity: 0;
     display: block;
   }
 }
 @media (max-width: 767px) {
-  .cid-s7SGB8Dn3W .card-title,
-  .cid-s7SGB8Dn3W .underline,
-  .cid-s7SGB8Dn3W .mbr-text,
-  .cid-s7SGB8Dn3W .mbr-section-btn,
-  .cid-s7SGB8Dn3W .mbr-section-subtitle,
-  .cid-s7SGB8Dn3W .mbr-section-title {
+  .cid-thr5WSG8Fl .card-title,
+  .cid-thr5WSG8Fl .underline,
+  .cid-thr5WSG8Fl .mbr-text,
+  .cid-thr5WSG8Fl .mbr-section-btn,
+  .cid-thr5WSG8Fl .mbr-section-subtitle,
+  .cid-thr5WSG8Fl .mbr-section-title {
     text-align: center !important;
   }
-  .cid-s7SGB8Dn3W .wrapper {
+  .cid-thr5WSG8Fl .wrapper {
     background-color: #100e00;
   }
 }
-.cid-s7SGB8Dn3W .mbr-section-title {
+.cid-thr5WSG8Fl .mbr-section-title {
   text-align: left;
 }
-.cid-s7SGB8Dn3W .mbr-section-title,
-.cid-s7SGB8Dn3W .underline {
+.cid-thr5WSG8Fl .mbr-section-title,
+.cid-thr5WSG8Fl .underline {
   text-align: center;
   color: #64ffda;
 }
@@ -1527,7 +1527,7 @@ section.lazy-placeholder:after {
 }
 .cid-s8mP09g0ku {
   padding-top: 15px;
-  padding-bottom: 30px;
+  padding-bottom: 75px;
   background-color: #232323;
 }
 .cid-s8mP09g0ku .mbr-overlay {
@@ -2158,7 +2158,7 @@ section.lazy-placeholder:after {
 }
 .cid-thqlk4EqhZ {
   padding-top: 135px;
-  padding-bottom: 105px;
+  padding-bottom: 15px;
   background-color: #232323;
 }
 .cid-thqlk4EqhZ .container-fluid {
@@ -2248,7 +2248,7 @@ section.lazy-placeholder:after {
   color: #ffffff;
 }
 .cid-s7OrvAt1vb {
-  padding-top: 30px;
+  padding-top: 60px;
   padding-bottom: 30px;
   background-color: #100e00;
 }
