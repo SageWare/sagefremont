@@ -63,7 +63,9 @@
     "versionPublish": "5.7.12",
     "screenshot": "screenshot.png",
     "publishChangesOnly": true,
-    "mbrsiteDomain": "uilklj4jri"
+    "mbrsiteDomain": "uilklj4jri",
+    "publishType": "local",
+    "publishPath": "@PROJECT_PATH@"
   },
   "pages": {
     "index.html": {
